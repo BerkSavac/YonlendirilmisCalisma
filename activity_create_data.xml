@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateData"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/activity_create_arac_numbertextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/AracAdet"/>
+
+    <EditText
+        android:id="@+id/activity_create_arac_numberedittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="10"
+        android:layout_alignStart="@id/activity_create_arac_numbertextview"
+        android:layout_below="@id/activity_create_arac_numbertextview"
+        tools:ignore="LabelFor">
+        <requestFocus/>
+    </EditText>
+
+    <TextView
+        android:id="@+id/activity_create_arac_namatextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/activity_create_arac_numberedittext"
+        android:layout_below="@id/activity_create_arac_numberedittext"
+        android:layout_marginTop="10dp"
+        android:text="@string/AracAdi"/>
+
+    <EditText
+        android:id="@+id/activity_create_arac_namaeditext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/activity_create_arac_namatextview"
+        android:layout_below="@id/activity_create_arac_namatextview"
+        android:inputType="text"
+        android:maxLength="40"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/activity_create_arac_birthdaytextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/activity_create_arac_namaeditext"
+        android:layout_below="@id/activity_create_arac_namaeditext"
+        android:layout_marginTop="10dp"
+        android:text="@string/AracYıl"/>
+
+    <EditText
+        android:id="@+id/activity_create_arac_birthdayeditext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/activity_create_arac_birthdaytextview"
+        android:layout_below="@id/activity_create_arac_birthdaytextview"
+        android:inputType="date"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/activity_create_arac_jktextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/activity_create_arac_birthdayeditext"
+        android:layout_below="@id/activity_create_arac_birthdayeditext"
+        android:layout_marginTop="10dp"
+        android:text="@string/AracPlaka"/>
+
+    <EditText
+        android:id="@+id/activity_create_arac_jkeditext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/activity_create_arac_jktextview"
+        android:layout_below="@id/activity_create_arac_jktextview"
+        android:inputType="text"
+        tools:ignore="LabelFor"
+        android:maxLength="10"
+        />
+
+    <TextView
+        android:id="@+id/activity_create_arac_addresstextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/activity_create_arac_jkeditext"
+        android:layout_below="@id/activity_create_arac_jkeditext"
+        android:layout_marginTop="10dp"
+        android:text="@string/Vergi"/>
+
+    <EditText
+        android:id="@+id/activity_create_arac_addresseditext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/activity_create_arac_addresstextview"
+        android:layout_below="@id/activity_create_arac_addresstextview"
+        android:inputType="date"
+        tools:ignore="LabelFor"
+        android:maxLength="100" />
+
+    <TextView
+        android:id="@+id/activity_create_arac_verildiview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_create_arac_jkeditext"
+        android:layout_alignStart="@id/activity_create_arac_jkeditext"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="75dp"
+        android:text="@string/Verildi" />
+
+    <EditText
+        android:id="@+id/activity_create_arac_verilditext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_create_arac_addresstextview"
+        android:layout_alignStart="@id/activity_create_arac_addresstextview"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="67dp"
+        android:inputType="text"
+        android:maxLength="100"
+        tools:ignore="LabelFor"
+        android:hint="Verildi? Verilmedi?"/>
+
+    <TextView
+        android:id="@+id/activity_create_arac_zimmetview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_create_arac_jkeditext"
+        android:layout_alignStart="@id/activity_create_arac_jkeditext"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="139dp"
+        android:text="@string/Zimmet" />
+
+    <EditText
+        android:id="@+id/activity_create_arac_zimmettext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_create_arac_addresstextview"
+        android:layout_alignStart="@id/activity_create_arac_addresstextview"
+        android:layout_marginStart="-6dp"
+        android:layout_marginTop="138dp"
+        android:inputType="text"
+        android:maxLength="100"
+        tools:ignore="LabelFor" />
+
+
+
+
+    <Button
+        android:id="@+id/activity_create_arac_simpanbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/activity_create_arac_addresseditext"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:drawableStart="@drawable/ic_action_done"
+        android:text="@string/AracEkle"/>
+
+    <Button
+        android:id="@+id/activity_create_arac_backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/borderlessButtonStyle"
+        android:drawableStart="@drawable/ic_action_back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@id/activity_create_arac_addresseditext"
+        android:layout_alignRight="@id/activity_create_arac_addresseditext"
+        tools:ignore="RtlHardcoded"
+        android:text="@string/GeriGel"/>
+
+</RelativeLayout>

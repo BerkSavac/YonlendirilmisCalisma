@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IlkYer.Hakkimizda">
+
+    <EditText
+        android:id="@+id/baslik"
+        android:layout_centerHorizontal="true"
+        android:layout_width="106dp"
+        android:layout_height="37dp"
+        android:background="#00F80909"
+        android:text="Hakkımızda"
+        android:textColor="#FF0058"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="18dp" />
+
+    <EditText
+        android:id="@+id/yazi"
+        android:layout_below="@+id/baslik"
+        android:layout_width="match_parent"
+        android:layout_height="342dp"
+        android:text="Bu uygulamamız 2019 yılında Medipol Üniversitesinde okuyan Berk Savaç'ın okulu
+         bitirmek amaçlı yaptığı daha sonrasında okul bititğinde hayata geçirdiği projesisidir.3 Araç
+kiralama firmasıyla çalısıyoruz ve bu araç kiralama şirketlerin hizmet verdiği 100 den fazla şirketle
+çalısarak 1000 den fazla araç filomuzla Türkiye'nin dört bir yanında hizmet vermekteyiz."
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <EditText
+        android:layout_width="205dp"
+        android:layout_height="81dp"
+        android:layout_below="@id/refarans"
+        android:layout_alignEnd="@id/refarans"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-276dp"
+        android:text="Uygulama Sahibi
+                            Berk Savaç"
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="403dp" />
+
+    <EditText
+        android:id="@+id/refarans"
+        android:layout_below="@+id/yazi"
+        android:layout_width="137dp"
+        android:layout_height="150dp"
+        android:text="Referans Firmalarmız Garenta          Araç Kiralayalım InterCity"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+</RelativeLayout>

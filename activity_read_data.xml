@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReadData"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    >
+    <TextView
+        android:id="@+id/activity_read_arac_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="104dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/textview"/>
+
+    <TextView
+        android:id="@+id/activity_read_arac_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/activity_read_arac_tv1"
+        android:layout_below="@id/activity_read_arac_tv1"
+        android:layout_marginTop="20dp"
+        android:text="@string/textview"/>
+
+    <TextView
+        android:id="@+id/activity_read_arac_tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/activity_read_arac_tv2"
+        android:layout_below="@id/activity_read_arac_tv2"
+        android:layout_marginTop="20dp"
+        android:text="@string/textview"/>
+
+    <TextView
+        android:id="@+id/activity_read_arac_tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/activity_read_arac_tv3"
+        android:layout_below="@id/activity_read_arac_tv3"
+        android:layout_marginTop="20dp"
+        android:text="@string/textview"/>
+
+    <TextView
+        android:id="@+id/activity_read_arac_tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/activity_read_arac_tv4"
+        android:layout_below="@id/activity_read_arac_tv4"
+        android:layout_marginTop="20dp"
+        android:text="@string/textview"/>
+    <TextView
+        android:id="@+id/activity_read_arac_tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/activity_read_arac_tv5"
+        android:layout_below="@id/activity_read_arac_tv5"
+        android:layout_marginTop="20dp"
+        android:text="@string/textview"/>
+    <TextView
+        android:id="@+id/activity_read_arac_tv7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/activity_read_arac_tv6"
+        android:layout_below="@id/activity_read_arac_tv6"
+        android:layout_marginTop="20dp"
+        android:text="@string/textview"/>
+
+    <TextView
+        android:id="@+id/activity_read_arac_ıd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/activity_read_arac_tv2"
+        android:layout_alignParentStart="true"
+        android:text="@string/AracAdet" />
+
+    <TextView
+        android:id="@+id/activity_read_arac_marka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/activity_read_arac_tv2"
+        android:layout_alignBottom="@id/activity_read_arac_tv2"
+        android:layout_alignStart="@id/activity_read_arac_ıd"
+        android:text="@string/AracAdi"/>
+
+    <TextView
+        android:id="@+id/activity_read_arac_yil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/activity_read_arac_tv3"
+        android:layout_alignBottom="@id/activity_read_arac_tv3"
+        android:layout_alignStart="@id/activity_read_arac_marka"
+        android:text="@string/AracYıl"/>
+
+    <TextView
+        android:id="@+id/activity_read_arac_plaka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/activity_read_arac_tv4"
+        android:layout_alignBottom="@id/activity_read_arac_tv4"
+        android:layout_alignStart="@id/activity_read_arac_yil"
+        android:text="@string/AracPlaka"/>
+
+    <TextView
+        android:id="@+id/activity_read_arac_vergi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/activity_read_arac_tv5"
+        android:layout_alignBottom="@id/activity_read_arac_tv5"
+        android:layout_alignStart="@id/activity_read_arac_plaka"
+        android:text="@string/Vergi"/>
+
+    <TextView
+        android:id="@+id/activity_read_arac_verildi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/activity_read_arac_tv6"
+        android:layout_alignStart="@id/activity_read_arac_vergi"
+        android:layout_alignBottom="@id/activity_read_arac_tv6"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-21dp"
+        android:text="@string/Verildi" />
+    <TextView
+        android:id="@+id/activity_read_arac_zimmet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/activity_read_arac_tv7"
+        android:layout_alignStart="@id/activity_read_arac_verildi"
+        android:layout_alignBottom="@id/activity_read_arac_tv7"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-21dp"
+        android:text="@string/Zimmet" />
+
+
+    <Button
+        android:id="@+id/activity_read_arac_buttonback"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_read_arac_vergi"
+        android:layout_alignStart="@id/activity_read_arac_vergi"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="87dp"
+        android:drawableStart="@drawable/ic_action_back"
+        android:text="@string/GeriGel" />
+
+</RelativeLayout>
